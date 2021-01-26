@@ -11,7 +11,7 @@ class App extends Component {
       <span> <Link to="/">Home</Link></span>
       <span> <Link to="/about">About</Link></span>
       <span> <Link to="/users">Users</Link></span>
-      <Route path="/" component={Home} />
+      <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
       </BrowserRouter>
     );
