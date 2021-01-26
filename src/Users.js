@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Users = ({ greetingMessage = 'Hi There' }) => (
+const Users = (props) => (
   <div>
     <h2> Users </h2>
-    <p> {greetingMessage}, this is my awesome Users component </p>
+    <p> {props.match.params.id} this is my awesome Users component </p>
   </div>
 );
 
